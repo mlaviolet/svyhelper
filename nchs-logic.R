@@ -8,7 +8,7 @@ if (n < 30) {
     # check the confint
     }
 
-# check the confint
+# check large abs_length
 # compute confint abs_length
 if (abs_length > 0.3) {
   # Suppress
@@ -17,6 +17,13 @@ if (abs_length > 0.3) {
       # check the relative width
     }
   
+# check small abs. length
+if (abs_length <= 0.05) {
+  # check for zero events
+  } else {
+  # check the relative width
+    }
+
 # check the relative width
 # compute confint rel_length
 if (rel_width > 1.3) {
